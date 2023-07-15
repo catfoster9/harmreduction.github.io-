@@ -1,0 +1,369 @@
+* { /* Reset the space of the webpage */
+    margin: 0px;
+    padding: 0px;
+ }
+ 
+ /* Set website background color to white */
+ body {
+  background-color: white; 
+ }
+ 
+ /* STYLE TEXT */
+ 
+ /* Style the "About Harm Reduction" banner on the home screen */
+ .banner {
+   font-family: "Jost", sans-serif;
+   background-color: gold;
+   padding: 5%;
+   margin-left: 0px;
+   margin-right: 0px;
+   text-align: center;
+   font-size: 42px;
+ }
+ 
+ /* If screen size is <480px, decrease font size of the banner */
+ @media screen and (max-width: 600px){
+   .banner {
+     font-size: 30px;
+   } 
+ }
+ 
+ h3 {
+   margin: 1.25em;
+   text-align: center;
+   font-family: "Jost", sans-serif;
+   font-size: 32px;
+   color: #de6b48ff;
+ }
+ 
+ /* Styles the paragraph text in the About Harm Reduction section */
+ .aboutHR {
+   font-family: "Jost", sans-serif;
+   margin-left: 10%;
+   margin-right: 10%;
+   text-align: center;
+   margin-top: 2em;
+   margin-bottom: 2em;
+   font-size: 20px;
+ }
+ 
+ /* Sets margin for the Resources header*/
+ .pageTitle {
+   margin-top: 0em;
+ }
+ 
+ /* Styles the headers of each column in the Take Action page */
+ .columnHead {
+   font-weight: bold;
+   font-family: "Jost", sans-serif;
+ }
+ 
+ /* Styles the captions under the images and video on the Resources page */
+ .caption {
+   font-family: "Jost", sans-serif;
+   text-align: center;
+   font-size: 20px;
+   margin-bottom: 35px;
+ }
+ 
+ /* Link color */
+ a {
+   color: #de6b48ff;
+ }
+ 
+ /* Styles the fact outputs in the Fact Generator*/
+ #fact {
+   margin-top: 1.25em;
+   text-align: center;
+   font-family: "Jost", sans-serif;
+   font-size: 30px;
+   color: black; 
+   padding: 2em;
+   margin-left: 15%;
+   margin-right: 15%;
+   border-style:solid;
+   border-color: #de6b48ff;
+   margin-bottom: 1.5em;
+ }
+ 
+ /* STYLE IMAGES */
+ 
+ /* Styles the harm reduction logo*/
+ #logo {
+   text-align: center;
+   margin-top: 1em;
+   margin-bottom: 1em;
+ }
+ 
+ /* Changes logo image size when screen shrinks */
+ @media screen and (max-width: 600px){
+   .logoPic {
+     width: 100%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+   }
+ } 
+ 
+ /* Styles the main image on the home screen */
+ #syringe-img {
+   width: 60%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 2em;
+   padding-bottom: 0em;
+ }
+ 
+ /* Styles the image about being kind on the home page */
+ #kindness {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 60%;
+ }
+ 
+ /* Styles the picture about loving community on the home page */
+ #community {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 60%;
+   margin-bottom: 2em;
+   margin-top: 1em;
+ }
+ 
+ /* The following style the pictures on the Take Action page*/
+ #bookPic {
+   width: 50%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto; 
+   margin-bottom: 1em; 
+   margin-top: 0em;
+ }
+ 
+ #pillsPic {
+   width: 50%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto; 
+   margin-bottom: 1em; 
+   margin-top: 0em;
+ }
+ 
+ #protestPic {
+   width: 50%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto; 
+   margin-bottom: 1em; 
+   margin-top: 0em;
+ }
+ 
+ #donatePic {
+   width: 50%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto; 
+   margin-bottom: 1em; 
+   margin-top: 0em;
+ }
+ 
+ /*
+ .gallery {
+   display: block; 
+   width: 33%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 15px;
+ }
+ */
+ 
+ /* The following style the flexbox on the Resources page */
+ .resourceContainer {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   margin-left: 5%;
+   margin-right: 5%;
+ }
+ 
+ @media screen and (max-width: 1000px){
+   .resourceContainer {
+     flex-wrap: wrap;
+   }
+ }
+ 
+ .resourceItem {
+   flex-basis: 30%;
+   text-align: center;
+   padding: 1em;
+ }
+ 
+ @media screen and (max-width: 1000px){
+   .resourceItem {
+     text-align: center;
+     display: block;
+     margin-left: auto;
+     margin-right: auto; 
+     width: 90%;
+   }
+ }
+ 
+ .gallery {
+   width:20em; 
+   height: 16em;
+   /* width: 100%; */
+ }
+ 
+ 
+ /* The following style the flexbox on the Parts of Harm Reduction page, and turns the flexbox into a column on small screens */
+ .strategiesContainer {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   margin-left: 5%;
+   margin-right: 5%;
+   align-items: center;
+ }
+ 
+ @media screen and (max-width: 1000px){
+   .strategiesContainer {
+     flex-wrap: wrap;
+   }
+ }
+ 
+ .strategyPic {
+   flex-basis: 30%;
+   text-align: center;
+   padding: 1em; 
+   width: 32em;
+   height: 22em;
+ 
+ }
+ 
+ @media screen and (max-width: 1000px){
+   .strategyPic {
+     text-align: center;
+     display: block;
+     margin-left: auto;
+     margin-right: auto; 
+     width: 90%;
+   }
+ }
+ 
+ .strategyText {
+   font-family: "Jost", sans-serif;
+   font-size: 20px; 
+   flex-basis: 50%;
+   text-align: left;
+   padding: 1em; 
+ 
+ }
+ 
+ @media screen and (max-width: 1000px){
+   .strategyText {
+     text-align: center;
+     flex-basis: 100%;
+   }
+ }
+ 
+ /* Styles the navigation bar */
+ #nav {
+   list-style-type: none;
+   background-color:gold;
+   padding: 1em;
+   text-align: center;
+ }
+ 
+ .nav-button {
+   display: inline;
+ }
+ 
+ .nav-button a {
+   text-decoration: none;
+   color: black;
+   font-family: "Jost", sans-serif;
+   font-size: 1.3em;
+   padding: 0.75em;
+ }
+ 
+ .nav-button a:hover {
+   background-color: white;
+ }
+ 
+ /* Underline, instead of change color, for the nav bar buttons on small screens */
+ @media screen and (max-width: 600px){
+   .nav-button a:hover {
+     text-decoration: underline;
+     padding: 0.75em;
+     background-color: transparent;
+   } 
+ }
+ 
+ 
+ /* STYLE BUTTONS */
+ 
+ /* Styles the Fact Generator button */
+ #factBtn {
+   margin-top: 5px;
+   border: none;
+   background-color: gold;
+   color: black;
+   padding: 1em;
+   cursor: pointer;
+   display: block;
+   margin-left: auto;
+   margin-right: auto; 
+   font-family: "Jost", sans-serif;
+   font-size: 20px;
+ }
+ 
+ ul {
+  list-style-type: none;
+ 
+ }
+ 
+ hr {
+   margin-left: 30%;
+   margin-right: 30%;
+ }
+ 
+ /* Styles the flexbox for the action items/columns */
+ .flexContainer {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   background-color: gold;
+   padding: 3em;
+   color: black;
+ }
+ 
+ .flexItem {
+   flex-basis: 100%;
+   text-align: center;
+   font-family: "Jost", sans-serif;
+   font-size: 18px;
+ }
+ 
+ .flexItem a {
+   color: black;
+   font-family: "Jost", sans-serif;
+ }
+ 
+ /* Styles the embedded YouTube video on the Resources page */
+ .video {
+   text-align: center;
+   margin-top: 1em;
+   margin-bottom: 1em;
+   display: block;
+   margin-left: auto;
+   margin-right: auto; 
+ 
+   font-family: "Jost", sans-serif;
+   padding-bottom: 2em;
+   font-size: 20px;
+ }
+ 
+ 

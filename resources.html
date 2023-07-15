@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Resources</title>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	  <!-- link the webpage's stylesheet -->
+	  <link rel="stylesheet" href="./style.css" />
+
+	  <!-- link the webpage's JavaScript file -->
+	  <script src="./script.js" defer></script>
+
+    <!--Imports font from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
+  </head>
+  
+  <body>
+    
+    <header>
+      <!--Sets up navigation bar and logo-->
+      <div class="headContainer">
+        <div class="headItem">
+          <ul id="nav">
+            <li class="nav-button">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-button">
+              <a href="issue.html">The Issue</a>
+            </li>
+            <li class="nav-button">
+              <a href="harm-reduc-parts.html">Parts of Harm Reduction</a>
+            </li>
+            <li class="nav-button">
+              <a href="action.html">Take Action</a>
+            </li>
+            <li class="nav-button">
+              <a href="resources.html">Resources</a>
+            </li>
+          </ul>
+        </div>
+        <div id="logo">
+          <a href="index.html">
+          <img class="logoPic" src="assets/logo2.png" alt="Logo that says Harm Reduction with an arrow">
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h3 class="pageTitle">Resources</h3>
+
+      <!--Flexbox of images and captions of resources-->
+      <div class="resourceContainer">
+        <div class="resourceItem">
+          <img class="gallery" src="assets/narcan-drawing.png" alt="Case of nasal spray naloxone">
+          <p class="caption"><a href="https://harmreduction.org/resource-center/harm-reduction-near-you/">Map</a> of free naloxone providers across the US</p>
+        </div>     
+        <div class="resourceItem">
+          <img class="gallery" src="assets/needles.jpeg" alt="Syringes">
+          <p class="caption"><a href="https://nasen.org/map/">Map/list</a> of Syringe Service Programs across the US</p>
+        </div>
+        <div class="resourceItem">
+          <img class="gallery" src="assets/envelope.jpeg" alt="Hand holding an envelope">
+          <p class="caption">Get free naloxone <a href="https://nextdistro.org/naloxone">mailed to you</a></p>
+        </div>
+      </div>
+
+      <p class="aboutHR"><a href="https://neverusealone.com/">Never Use Alone</a> is a service that offers to stay on the phone with you if you are using drugs alone. If you become unresponsive, the operator will call 911 for you. The phone number to call: (800) 484-3731 </p>
+      
+      <!--Embeds YouTube video about using naloxone-->
+      <div class="video">
+        <iframe width="330em" height="250em" src="https://www.youtube.com/embed/-xTKsHFBXlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Tutorial on administering all types of naloxone</p>
+      </div>
+
+
+    </main>
+
+    
+  </body>
+</html>
